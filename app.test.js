@@ -12,7 +12,7 @@ describe("health check up ",()=>{
         const response = await request(app).get("/test")
 
         expect(response.statusCode).toBe(200)
-        expect(response.body).toEqual({result:"test api successfully."})
+        expect(response.body).toEqual({result:"update : test api successfully."})
     })
 })
 
