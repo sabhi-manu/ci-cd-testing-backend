@@ -29,8 +29,8 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     
- deploy:
-    needs: test          # only runs if tests pass
+  deploy:
+    needs: build          # only runs if tests pass
     runs-on: ubuntu-latest
     steps:
       - name: Deploy via SSH
