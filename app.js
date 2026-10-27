@@ -15,7 +15,7 @@ let nextID=1
 
 app.get("/test",(req,res)=>{
     res.status(200).json({
-        result:"test api successfully."
+        result:"update : test api successfully."
     })
 })
 
